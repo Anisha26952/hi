@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+        
+
+      
+
+    <include file="changelog-schema.xml"/>
+
+    <include file="changelog-data.xml"/>
+
+    
+
+      <changeSet id="1" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="person">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address1" type="varchar(50)"/>
+            <column name="address2" type="varchar(50)"/>
+            <column name="city" type="varchar(30)"/>
+        </createTable>
+       
+    </changeSet>
+    
+
+<changeSet id="2" author="other.dev" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <addColumn tableName="person">
+            <column name="country" type="varchar(2)"/>
+        </addColumn>
+    </changeSet>
+	
+<changeSet id="3" author="your.name" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <createTable tableName="company"> 
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address1" type="varchar(50)"/>
+            <column name="address2" type="varchar(50)"/>
+            <column name="city" type="varchar(30)"/>
+        </createTable>
+    </changeSet>
+
+
+<changeSet id="4" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="Customer">
+            <column name="Customerid" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Firstname" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LastName" type="varchar(50)"/>
+        </createTable>
+       
+    </changeSet>
+
+
+<changeSet id="5" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="blog_post">
+            <column name="PostID" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Title" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Content" type="varchar(50)"/>
+        </createTable>
+       
+    </changeSet>
+	
+
+<changeSet id="6" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="City">
+            <column name="City1" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="City2" type="varchar(50)"/>
+        </createTable>
+       
+    </changeSet>	
+
+    <changeSet id="7" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="Employees">
+            <column name="Employee_id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Firstname" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LastName" type="varchar(50)"/>
+			<column name="Birth_Date" type="date"/>
+			<column name="Hire_Date" type="date"/>
+			
+        </createTable>
+       
+    </changeSet>
+
+    <changeSet id="8" author="your.name" labels="example-label" context="example-context">
+          <comment>example-comment</comment>
+        <createTable tableName="Companies">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Email" type="varchar(50)"/>
+            <column name="Content" type="varchar(50)"/>
+        </createTable>
+       
+    </changeSet>
+
+   
+
+      
+</databaseChangeLog>
+
+
+
